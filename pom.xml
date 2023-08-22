@@ -23,13 +23,6 @@
             <artifactId>postgresql</artifactId>
             <version>42.5.0</version>
         </dependency>
-
-        <dependency>
-            <groupId>org.flywaydb</groupId>
-            <artifactId>flyway-core</artifactId>
-            <version>9.21.1</version>
-        </dependency>
-
     </dependencies>
 
 
@@ -48,6 +41,19 @@
                         </goals>
                     </execution>
                 </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.postgresql</groupId>
+                        <artifactId>postgresql</artifactId>
+                        <version>42.5.0</version>
+                    </dependency>
+
+                    <dependency>
+                        <groupId>org.flywaydb</groupId>
+                        <artifactId>flyway-core</artifactId>
+                        <version>9.21.1</version>
+                    </dependency>
+                </dependencies>
             </plugin>
 
         </plugins>
